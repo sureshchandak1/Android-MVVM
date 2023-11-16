@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.qs.mvvm.structures"
+    namespace = "com.material.mvvm.structures"
     compileSdk = 34
 
     defaultConfig {
@@ -63,7 +63,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.multidex:multidex:2.0.1")
 
-    implementation(project(mapOf("path" to ":QSComponent")))
+    implementation(project(mapOf("path" to ":sharedcode")))
 
     // ViewModel and LiveData
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")

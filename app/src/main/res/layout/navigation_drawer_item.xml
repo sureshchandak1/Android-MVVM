@@ -9,7 +9,7 @@
 
         <variable
             name="vm"
-            type="com.qs.mvvm.structures.view.navigation.NavigationDrawerItemViewModel" />
+            type="com.material.mvvm.structures.view.navigation.NavigationDrawerItemViewModel" />
     </data>
 
     <LinearLayout
@@ -24,7 +24,7 @@
         android:paddingEnd="@dimen/dp_16"
         android:paddingBottom="@dimen/dp_16">
 
-        <com.qs.sharedcode.widgets.CustomImageView
+        <com.material.sharedcode.widgets.CustomImageView
             android:id="@+id/drawerImage"
             android:layout_width="@dimen/dp_24"
             android:layout_height="@dimen/dp_24"
@@ -33,7 +33,7 @@
             app:setImageResources='@{vm.drawerItem.imageId}'
             tools:src="@drawable/ic_user" />
 
-        <com.qs.sharedcode.widgets.CustomTextView
+        <com.material.sharedcode.widgets.CustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@{vm.drawerItem.title}"

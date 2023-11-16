@@ -9,11 +9,11 @@
 
         <variable
             name="vm"
-            type="com.qs.mvvm.structures.view.main.MainViewModel" />
+            type="com.material.mvvm.structures.view.main.MainViewModel" />
 
         <variable
             name="repository"
-            type="com.qs.mvvm.structures.view.main.MainRepository" />
+            type="com.material.mvvm.structures.view.main.MainRepository" />
     </data>
 
     <androidx.drawerlayout.widget.DrawerLayout

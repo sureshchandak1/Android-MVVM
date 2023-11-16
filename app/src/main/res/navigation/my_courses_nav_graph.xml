@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/myCoursesFragment"
-        android:name="com.qs.mvvm.structures.view.my.courses.MyCoursesFragment"
+        android:name="com.material.mvvm.structures.view.my.courses.MyCoursesFragment"
         android:label="fragment_my_courses"
         tools:layout="@layout/fragment_my_courses" />
 </navigation>

@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/exploreFragment"
-        android:name="com.qs.mvvm.structures.view.explore.ExploreFragment"
+        android:name="com.material.mvvm.structures.view.explore.ExploreFragment"
         android:label="fragment_explore"
         tools:layout="@layout/fragment_explore" />
 </navigation>

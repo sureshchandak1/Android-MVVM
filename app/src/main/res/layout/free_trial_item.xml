@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.qs.mvvm.structures.common.FreeTrialItemViewModel" />
+            type="com.material.mvvm.structures.common.FreeTrialItemViewModel" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
@@ -52,7 +52,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <com.qs.sharedcode.widgets.CustomTextView
+                <com.material.sharedcode.widgets.CustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Get Pro for FREE"
@@ -60,7 +60,7 @@
                     android:textSize="@dimen/sp_12"
                     app:text_font="NunitoSans_Regular" />
 
-                <com.qs.sharedcode.widgets.CustomTextView
+                <com.material.sharedcode.widgets.CustomTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Try 15 Days Subscription\nFREE"

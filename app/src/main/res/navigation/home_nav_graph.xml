@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.qs.mvvm.structures.view.home.HomeFragment"
+        android:name="com.material.mvvm.structures.view.home.HomeFragment"
         android:label="fragment_dashboard"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,12 +19,12 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.qs.mvvm.structures.view.login.LoginFragment"
+        android:name="com.material.mvvm.structures.view.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
     <fragment
         android:id="@+id/recyclerViewFragment"
-        android:name="com.qs.mvvm.structures.view.recyclerview.RecyclerViewFragment"
+        android:name="com.material.mvvm.structures.view.recyclerview.RecyclerViewFragment"
         android:label="fragment_recycler_view"
         tools:layout="@layout/fragment_recycler_view" />
 

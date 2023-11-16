@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "mvvm"
 include(":app")
-include(":QSComponent")
+include(":sharedcode")

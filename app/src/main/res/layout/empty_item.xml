@@ -5,7 +5,7 @@
 
         <variable
             name="vm"
-            type="com.qs.mvvm.structures.common.EmptyItemViewModel" />
+            type="com.material.mvvm.structures.common.EmptyItemViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

@@ -7,11 +7,11 @@
 
         <variable
             name="vm"
-            type="com.qs.mvvm.structures.view.recyclerview.RecyclerViewViewModel" />
+            type="com.material.mvvm.structures.view.recyclerview.RecyclerViewViewModel" />
 
         <variable
             name="repository"
-            type="com.qs.mvvm.structures.view.recyclerview.RecyclerViewRepository" />
+            type="com.material.mvvm.structures.view.recyclerview.RecyclerViewRepository" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,7 +19,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/actionBarSize">
 
-        <com.qs.sharedcode.widgets.CustomImageView
+        <com.material.sharedcode.widgets.CustomImageView
             android:id="@+id/linearIcon"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dp_0"
@@ -32,7 +32,7 @@
             app:setImageDrawable='@{repository.linearIcon}'
             tools:src="@drawable/ic_linear" />
 
-        <com.qs.sharedcode.widgets.CustomRecyclerView
+        <com.material.sharedcode.widgets.CustomRecyclerView
             android:id="@+id/paidRecyclerView"
             android:layout_width="@dimen/dp_0"
             android:layout_height="@dimen/dp_0"

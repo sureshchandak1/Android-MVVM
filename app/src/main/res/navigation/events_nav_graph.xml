@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/eventsFragment"
-        android:name="com.qs.mvvm.structures.view.events.EventsFragment"
+        android:name="com.material.mvvm.structures.view.events.EventsFragment"
         android:label="fragment_events"
         tools:layout="@layout/fragment_events" />
 

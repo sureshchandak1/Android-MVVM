@@ -7,11 +7,11 @@
 
         <variable
             name="vm"
-            type="com.qs.mvvm.structures.view.login.LoginViewModel" />
+            type="com.material.mvvm.structures.view.login.LoginViewModel" />
 
         <variable
             name="repository"
-            type="com.qs.mvvm.structures.view.login.LoginRepository" />
+            type="com.material.mvvm.structures.view.login.LoginRepository" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -6,11 +6,11 @@
 
         <variable
             name="vm"
-            type="com.qs.mvvm.structures.view.home.HomeViewModel" />
+            type="com.material.mvvm.structures.view.home.HomeViewModel" />
 
         <variable
             name="repository"
-            type="com.qs.mvvm.structures.view.home.HomeRepository" />
+            type="com.material.mvvm.structures.view.home.HomeRepository" />
     </data>
 
     <ScrollView
@@ -24,13 +24,13 @@
             android:orientation="vertical"
             android:padding="@dimen/dp_16">
 
-            <com.qs.sharedcode.widgets.material.CustomMaterialButton
+            <com.material.sharedcode.widgets.material.CustomMaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{repository::loginClick}"
                 android:text="@string/login" />
 
-            <com.qs.sharedcode.widgets.material.CustomMaterialButton
+            <com.material.sharedcode.widgets.material.CustomMaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_10"

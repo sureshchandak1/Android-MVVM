@@ -5,11 +5,11 @@
 
     <data>
 
-        <import type="com.qs.mvvm.structures.R" />
+        <import type="com.material.mvvm.structures.R" />
 
         <variable
             name="vm"
-            type="com.qs.mvvm.structures.view.recyclerview.RecyclerViewGridItemViewModel" />
+            type="com.material.mvvm.structures.view.recyclerview.RecyclerViewGridItemViewModel" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
@@ -86,14 +86,14 @@
                 app:layout_constraintEnd_toEndOf="@+id/imageCard"
                 app:layout_constraintStart_toStartOf="@+id/imageCard">
 
-                <com.qs.sharedcode.widgets.CustomImageView
+                <com.material.sharedcode.widgets.CustomImageView
                     android:layout_width="@dimen/dp_16"
                     android:layout_height="@dimen/dp_16"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_book_1"
                     app:tint="@color/white_100" />
 
-                <com.qs.sharedcode.widgets.CustomTextView
+                <com.material.sharedcode.widgets.CustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/dp_4"
@@ -104,7 +104,7 @@
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
-            <com.qs.sharedcode.widgets.CustomTextView
+            <com.material.sharedcode.widgets.CustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/dp_10"
@@ -116,7 +116,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/imageCard"
                 app:text_font="NunitoSans_SemiBold" />
 
-            <com.qs.sharedcode.widgets.material.CustomMaterialChip
+            <com.material.sharedcode.widgets.material.CustomMaterialChip
                 android:id="@+id/languageChip"
                 android:layout_width="@dimen/dp_0"
                 android:layout_height="wrap_content"
@@ -140,7 +140,7 @@
                 app:textEndPadding="@dimen/dp_8"
                 app:textStartPadding="@dimen/dp_8" />
 
-            <com.qs.sharedcode.widgets.material.CustomMaterialChip
+            <com.material.sharedcode.widgets.material.CustomMaterialChip
                 android:id="@+id/categoryChip"
                 android:layout_width="@dimen/dp_0"
                 android:layout_height="wrap_content"
@@ -169,7 +169,7 @@
                 app:textEndPadding="@dimen/dp_8"
                 app:textStartPadding="@dimen/dp_4" />
 
-            <com.qs.sharedcode.widgets.material.CustomMaterialChip
+            <com.material.sharedcode.widgets.material.CustomMaterialChip
                 android:id="@+id/ratingChip"
                 android:layout_width="@dimen/dp_0"
                 android:layout_height="wrap_content"
@@ -198,7 +198,7 @@
                 app:barrierDirection="bottom"
                 app:constraint_referenced_ids="languageChip, categoryChip, ratingChip" />
 
-            <com.qs.sharedcode.widgets.CustomTextView
+            <com.material.sharedcode.widgets.CustomTextView
                 android:id="@+id/title"
                 android:layout_width="@dimen/dp_0"
                 android:layout_height="wrap_content"
@@ -227,7 +227,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/title"
                 app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
 
-            <com.qs.sharedcode.widgets.CustomTextView
+            <com.material.sharedcode.widgets.CustomTextView
                 android:id="@+id/profileName"
                 android:layout_width="@dimen/dp_0"
                 android:layout_height="wrap_content"
@@ -250,7 +250,7 @@
                 app:barrierDirection="bottom"
                 app:constraint_referenced_ids="profile, profileName" />
 
-            <com.qs.sharedcode.widgets.CustomTextView
+            <com.material.sharedcode.widgets.CustomTextView
                 android:id="@+id/purchasePrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -262,7 +262,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/profileBarrier"
                 app:text_font="NunitoSans_Bold" />
 
-            <com.qs.sharedcode.widgets.CustomTextView
+            <com.material.sharedcode.widgets.CustomTextView
                 android:id="@+id/mrpPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -283,7 +283,7 @@
                 app:barrierDirection="bottom"
                 app:constraint_referenced_ids="purchasePrice, mrpPrice" />
 
-            <com.qs.sharedcode.widgets.material.CustomMaterialButton
+            <com.material.sharedcode.widgets.material.CustomMaterialButton
                 android:id="@+id/addCartButton"
                 style="@style/Widget.Material3.Button"
                 android:layout_width="@dimen/dp_0"

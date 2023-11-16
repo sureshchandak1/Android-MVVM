@@ -10,7 +10,7 @@
 
         <variable
             name="vm"
-            type="com.qs.mvvm.structures.view.navigation.NavigationDrawerViewModel" />
+            type="com.material.mvvm.structures.view.navigation.NavigationDrawerViewModel" />
     </data>
 
     <androidx.core.widget.NestedScrollView
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.qs.sharedcode.widgets.CustomImageView
+            <com.material.sharedcode.widgets.CustomImageView
                 android:id="@+id/closeImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/closeImage"
                 app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
 
-            <com.qs.sharedcode.widgets.CustomTextView
+            <com.material.sharedcode.widgets.CustomTextView
                 android:id="@+id/name"
                 android:layout_width="@dimen/dp_0"
                 android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/closeImage"
                 app:text_font="NunitoSans_Bold" />
 
-            <com.qs.sharedcode.widgets.CustomTextView
+            <com.material.sharedcode.widgets.CustomTextView
                 android:id="@+id/email"
                 android:layout_width="@dimen/dp_0"
                 android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/divider"
                 app:setAdapterVertical='@{vm.navAdapter}' />
 
-            <com.qs.sharedcode.widgets.material.CustomMaterialButton
+            <com.material.sharedcode.widgets.material.CustomMaterialButton
                 android:id="@+id/loginButton"
                 style="@style/Widget.Material3.Button"
                 android:layout_width="@dimen/dp_0"

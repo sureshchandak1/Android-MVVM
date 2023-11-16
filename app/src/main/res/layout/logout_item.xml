@@ -6,14 +6,14 @@
 
         <variable
             name="vm"
-            type="com.qs.mvvm.structures.common.LogoutItemViewModel" />
+            type="com.material.mvvm.structures.common.LogoutItemViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.qs.sharedcode.widgets.material.CustomMaterialButton
+        <com.material.sharedcode.widgets.material.CustomMaterialButton
             android:id="@+id/loginButton"
             style="@style/Widget.Material3.Button"
             android:layout_width="match_parent"
