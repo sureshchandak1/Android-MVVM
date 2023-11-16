@@ -1,0 +1,193 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseTheme">
+
+    </style>
+
+    <style name="BaseTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@color/background</item>
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorPrimaryContainer">@color/primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/onPrimaryContainer</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
+        <item name="colorSecondaryContainer">@color/secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/onSecondaryContainer</item>
+        <item name="colorTertiary">@color/tertiary</item>
+        <item name="colorOnTertiary">@color/onTertiary</item>
+        <item name="colorTertiaryContainer">@color/tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/onTertiaryContainer</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorErrorContainer">@color/errorContainer</item>
+        <item name="colorOnError">@color/onError</item>
+        <item name="colorOnErrorContainer">@color/onErrorContainer</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/onBackground</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+        <item name="colorSurfaceVariant">@color/surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/onSurfaceVariant</item>
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorOnSurfaceInverse">@color/inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/primaryInverse</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="cardBackgroundColor">@color/background</item>
+
+        <item name="imageColor1">@color/imageColor1</item>
+        <item name="imageColorLight">@color/secondaryContainer</item>
+
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.App.Subtitle1.SemiBold</item>
+        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.App.Subtitle1.SemiBold</item>
+        <item name="materialCardViewStyle">@style/Widget.App.CardView</item>
+
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomNavigationView.InActive" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/sp_22</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/dp_12</item>
+        <item name="cornerSizeTopLeft">@dimen/dp_12</item>
+        <item name="cornerSizeBottomRight">@dimen/dp_12</item>
+        <item name="cornerSizeBottomLeft">@dimen/dp_12</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent.TopRight.BottomRight" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/dp_12</item>
+        <item name="cornerSizeTopLeft">@dimen/dp_0</item>
+        <item name="cornerSizeBottomRight">@dimen/dp_12</item>
+        <item name="cornerSizeBottomLeft">@dimen/dp_0</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent.TopLeft.BottomLeft.50Percent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/dp_0</item>
+        <item name="cornerSizeTopLeft">50%</item>
+        <item name="cornerSizeBottomRight">@dimen/dp_0</item>
+        <item name="cornerSizeBottomLeft">50%</item>
+    </style>
+
+    <style name="ShapeAppearance.App.Top.Image" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/dp_20</item>
+        <item name="cornerSizeTopLeft">@dimen/dp_20</item>
+        <item name="cornerSizeBottomRight">@dimen/dp_0</item>
+        <item name="cornerSizeBottomLeft">@dimen/dp_0</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize5Percent" parent="">
+        <item name="cornerSize">5%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize10Percent" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppBottomSheetModalStyle</item>
+    </style>
+
+    <style name="AppBottomSheetModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_bottom_sheet</item>
+    </style>
+
+    <style name="FullScreenDialogTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="ThemeOverlay.Slider" parent="">
+        <item name="colorOnPrimary">@color/secondary</item>
+    </style>
+
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.App</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/onBackground</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle1.SemiBold" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:textColor">@color/onSurface</item>
+    </style>
+
+    <style name="textRegular" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="fontFamily">@font/nunito_sans_regular</item>
+        <item name="android:fontFamily">@font/nunito_sans_regular</item>
+    </style>
+
+    <style name="textSemiBold" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+    </style>
+
+    <style name="textBold" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+    </style>
+
+    <style name="Widget.App.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Card</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Card" parent="">
+        <item name="colorPrimary">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout.SearchBox" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputLayout</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputLayout" parent="">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+    </style>
+
+</resources>

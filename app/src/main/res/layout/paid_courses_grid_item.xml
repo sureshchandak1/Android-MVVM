@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.qs.mvvm.structures.R" />
+
+        <variable
+            name="vm"
+            type="com.qs.mvvm.structures.view.recyclerview.RecyclerViewGridItemViewModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        style="?attr/materialCardViewElevatedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_2"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:onClick="@{vm::itemClick}"
+        app:cardElevation="@dimen/dp_1"
+        app:cardPreventCornerOverlap="false"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.App.MediumComponent"
+        app:strokeColor="@color/outline"
+        app:strokeWidth="@dimen/dp_0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_16">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/imageCard"
+                style="?attr/materialCardViewElevatedStyle"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_200"
+                app:cardElevation="@dimen/dp_0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.App.MediumComponent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/image"
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="0dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/dummy_image_1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="@dimen/dp_80"
+                        android:background="@drawable/bg_gradient_bottom_black"
+                        app:layout_constraintBottom_toBottomOf="@+id/image"
+                        app:layout_constraintEnd_toEndOf="@+id/image"
+                        app:layout_constraintStart_toStartOf="@+id/image" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                app:layout_constraintBottom_toBottomOf="@+id/imageCard"
+                app:layout_constraintEnd_toEndOf="@+id/imageCard"
+                app:layout_constraintStart_toStartOf="@+id/imageCard">
+
+                <com.qs.sharedcode.widgets.CustomImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_book_1"
+                    app:tint="@color/white_100" />
+
+                <com.qs.sharedcode.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_4"
+                    android:text="19 lectures"
+                    android:textColor="@color/white_100"
+                    android:textSize="@dimen/sp_10"
+                    app:text_font="NunitoSans_SemiBold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.qs.sharedcode.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:text="3h 15min"
+                android:textColor="@color/white_100"
+                android:textSize="@dimen/sp_10"
+                app:layout_constraintBottom_toBottomOf="@+id/imageCard"
+                app:layout_constraintEnd_toEndOf="@+id/imageCard"
+                app:text_font="NunitoSans_SemiBold" />
+
+            <com.qs.sharedcode.widgets.material.CustomMaterialChip
+                android:id="@+id/languageChip"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingBottom="@dimen/dp_8"
+                android:text="English"
+                android:textAlignment="center"
+                android:textSize="@dimen/sp_9"
+                app:chipBackgroundColor="@color/bg_chip"
+                app:chipEndPadding="@dimen/dp_2"
+                app:chipMinHeight="@dimen/dp_0"
+                app:chipStartPadding="@dimen/dp_2"
+                app:chipStrokeColor="@color/outline"
+                app:chipStrokeWidth="@dimen/dp_1"
+                app:ensureMinTouchTargetSize="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageCard"
+                app:setChipBackgroundColor='@{R.color.bg_chip}'
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                app:textEndPadding="@dimen/dp_8"
+                app:textStartPadding="@dimen/dp_8" />
+
+            <com.qs.sharedcode.widgets.material.CustomMaterialChip
+                android:id="@+id/categoryChip"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingBottom="@dimen/dp_8"
+                android:text="Mind"
+                android:textAlignment="center"
+                android:textSize="@dimen/sp_9"
+                app:chipBackgroundColor="@color/bg_chip"
+                app:chipEndPadding="@dimen/dp_2"
+                app:chipIcon="@drawable/ic_mind"
+                app:chipIconSize="@dimen/dp_14"
+                app:chipIconTint="@null"
+                app:chipMinHeight="@dimen/dp_0"
+                app:chipStartPadding="@dimen/dp_6"
+                app:chipStrokeColor="@color/outline"
+                app:chipStrokeWidth="@dimen/dp_1"
+                app:ensureMinTouchTargetSize="false"
+                app:iconStartPadding="@dimen/dp_2"
+                app:layout_constraintStart_toEndOf="@+id/languageChip"
+                app:layout_constraintTop_toBottomOf="@+id/imageCard"
+                app:setChipBackgroundColor='@{R.color.bg_chip}'
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                app:textEndPadding="@dimen/dp_8"
+                app:textStartPadding="@dimen/dp_4" />
+
+            <com.qs.sharedcode.widgets.material.CustomMaterialChip
+                android:id="@+id/ratingChip"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:text="3.5"
+                android:textAlignment="center"
+                android:textSize="@dimen/sp_14"
+                app:chipBackgroundColor="@color/bg_chip"
+                app:chipIcon="@drawable/ic_star_yellow"
+                app:chipStrokeColor="@color/outline"
+                app:chipStrokeWidth="@dimen/dp_0"
+                app:ensureMinTouchTargetSize="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageCard"
+                app:setChipBackgroundColor='@{R.color.bg_chip}'
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/chipBarrier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="languageChip, categoryChip, ratingChip" />
+
+            <com.qs.sharedcode.widgets.CustomTextView
+                android:id="@+id/title"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="Image Makeover for Women"
+                android:textColor="@color/onBackground"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chipBarrier"
+                app:text_font="NunitoSans_Bold" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profile"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_16"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/dummy_image_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+            <com.qs.sharedcode.widgets.CustomTextView
+                android:id="@+id/profileName"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Jaidevi Mehta"
+                android:textColor="@color/grey_500"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintBottom_toBottomOf="@+id/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/profile"
+                app:layout_constraintTop_toTopOf="@+id/profile"
+                app:text_font="NunitoSans_SemiBold" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/profileBarrier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="profile, profileName" />
+
+            <com.qs.sharedcode.widgets.CustomTextView
+                android:id="@+id/purchasePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="₹8,500"
+                android:textColor="@color/onBackground"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileBarrier"
+                app:text_font="NunitoSans_Bold" />
+
+            <com.qs.sharedcode.widgets.CustomTextView
+                android:id="@+id/mrpPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:textColor="@color/grey_500"
+                android:textSize="@dimen/sp_10"
+                app:centerUnderlineText='@{`₹10,000`}'
+                app:layout_constraintBottom_toBottomOf="@+id/purchasePrice"
+                app:layout_constraintStart_toEndOf="@+id/purchasePrice"
+                app:layout_constraintTop_toTopOf="@+id/purchasePrice"
+                app:text_font="NunitoSans_SemiBold"
+                tools:text="₹10,000" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/priceBarrier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="purchasePrice, mrpPrice" />
+
+            <com.qs.sharedcode.widgets.material.CustomMaterialButton
+                android:id="@+id/addCartButton"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:backgroundTint="@color/onBackground"
+                android:insetLeft="@dimen/dp_0"
+                android:insetTop="@dimen/dp_0"
+                android:insetRight="@dimen/dp_0"
+                android:insetBottom="@dimen/dp_0"
+                android:minHeight="@dimen/dp_0"
+                android:paddingTop="@dimen/dp_0"
+                android:paddingBottom="@dimen/dp_0"
+                android:text="@{`+ ` + @string/add_to_cart}"
+                android:textColor="@color/background"
+                android:textSize="@dimen/sp_16"
+                app:cornerRadius="@dimen/dp_12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/priceBarrier"
+                tools:text="+ Add to cart" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

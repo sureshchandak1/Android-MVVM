@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">mvvm</string>
+    <string name="home">Home</string>
+    <string name="courses">Courses</string>
+    <string name="my_courses">My Courses</string>
+    <string name="explore">Explore</string>
+    <string name="events">Events</string>
+    <string name="profile">Profile</string>
+    <string name="login">Login</string>
+    <string name="let_get_started">Let’s get started</string>
+    <string name="email">Email</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or_login_with">or login with</string>
+    <string name="not_a_member_yet">Not a member yet?</string>
+    <string name="register_now">Register now</string>
+    <string name="already_a_member">Already a member?</string>
+    <string name="login_instead">Login instead</string>
+    <string name="recyclerview">RecyclerView</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="logout">Logout</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="my_subscriptions">My Subscriptions</string>
+    <string name="buy_subscription">Buy Subscription</string>
+    <string name="my_ebook">My E-Books</string>
+    <string name="store">Store</string>
+    <string name="notifications">Notifications</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="e_books">E-Books</string>
+    <string name="my_events">My Events</string>
+    <string name="change_password">Change Password</string>
+
+</resources>

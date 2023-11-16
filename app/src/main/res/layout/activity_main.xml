@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="vm"
+            type="com.qs.mvvm.structures.view.main.MainViewModel" />
+
+        <variable
+            name="repository"
+            type="com.qs.mvvm.structures.view.main.MainRepository" />
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/dp_0"
+                app:elevation="@dimen/dp_0">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/white_100"
+                    app:navigationIcon="@drawable/ic_nav_drawer"
+                    app:navigationIconTint="?attr/imageColor1"
+                    app:title="@{repository.title}"
+                    app:titleTextAppearance="@style/Toolbar.TitleText"
+                    app:titleTextColor="@color/onBackground" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/nav_host_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottomAppBar"
+                style="@style/Widget.MaterialComponents.BottomAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:backgroundTint="@color/bottomNavBackground"
+                android:visibility="@{repository.bottomNavVisibility ? View.VISIBLE : View.GONE}"
+                app:contentInsetEnd="@dimen/dp_0"
+                app:contentInsetStart="@dimen/dp_0"
+                app:elevation="@dimen/dp_6"
+                app:hideOnScroll="false">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:elevation="@dimen/dp_0"
+                    app:elevation="@dimen/dp_0"
+                    app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
+                    app:itemBackground="@drawable/bottom_nav_item_bg_transparent"
+                    app:itemIconSize="@dimen/dp_24"
+                    app:itemIconTint="@drawable/bottom_nav_item_selector"
+                    app:itemRippleColor="@android:color/transparent"
+                    app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+                    app:itemTextAppearanceInactive="@style/BottomNavigationView.InActive"
+                    app:itemTextColor="@drawable/bottom_nav_item_selector"
+                    app:labelVisibilityMode="labeled"
+                    app:menu="@menu/bottom_navigation_menu" />
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="@dimen/dp_320"
+            android:layout_height="match_parent"
+            android:layout_gravity="start" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>

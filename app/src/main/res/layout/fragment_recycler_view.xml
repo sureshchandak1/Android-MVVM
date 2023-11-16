@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.qs.mvvm.structures.view.recyclerview.RecyclerViewViewModel" />
+
+        <variable
+            name="repository"
+            type="com.qs.mvvm.structures.view.recyclerview.RecyclerViewRepository" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <com.qs.sharedcode.widgets.CustomImageView
+            android:id="@+id/linearIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_0"
+            android:onClick="@{repository::linearIconClick}"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:setImageDrawable='@{repository.linearIcon}'
+            tools:src="@drawable/ic_linear" />
+
+        <com.qs.sharedcode.widgets.CustomRecyclerView
+            android:id="@+id/paidRecyclerView"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearIcon"
+            app:setAdapter="@{repository.recyclerViewAdapter}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

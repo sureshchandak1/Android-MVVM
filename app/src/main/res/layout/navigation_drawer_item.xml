@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="vm"
+            type="com.qs.mvvm.structures.view.navigation.NavigationDrawerItemViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ripple"
+        android:gravity="center"
+        android:onClick="@{vm::itemClick}"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingEnd="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_16">
+
+        <com.qs.sharedcode.widgets.CustomImageView
+            android:id="@+id/drawerImage"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:visibility="@{vm.isShowImage ? View.VISIBLE : View.GONE}"
+            app:setImageResources='@{vm.drawerItem.imageId}'
+            tools:src="@drawable/ic_user" />
+
+        <com.qs.sharedcode.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{vm.drawerItem.title}"
+            android:textColor="@color/onBackground"
+            android:textSize="@dimen/sp_16"
+            app:text_font="NunitoSans_SemiBold"
+            tools:text="@string/profile" />
+
+    </LinearLayout>
+
+</layout>
